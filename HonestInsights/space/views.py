@@ -8,3 +8,6 @@ def login(request):
 
 def signup(request):
     return render(request,'signUp.html')
+
+def dashboard(request):
+    return render(request,'dashboard.html')

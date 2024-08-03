@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    color: black;
+    color: white;
+}
+
+body{
+    background-color: black;
 }
 
 /* header section start from here  */
@@ -13,6 +17,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 1.2rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid grey;
+    padding: 2px 5px;
 }
 .header .heading h1 {
     letter-spacing: 1px;
@@ -32,27 +41,28 @@
 
 /* Note section start from here  */
 .note {
-    width: 90%;
-    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .note .note_heading h2 {
-    text-decoration: underline;
-    letter-spacing: 1px;
-    font-size: 1.3rem;
+    margin: 1rem 0rem;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+.note .description {
+    width: 90%;
 }
 .note .description p {
     font-size: .9rem;
-    letter-spacing: 1px;
-    font-weight: 400;
-}
-.lines {
-    display: flex;
-    justify-content: center;
-    margin: 1rem 0rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    line-height: 30px;
 }
 .line {
     border: 1px solid grey;
-    width: 95%;
+    width: 98%;
+    margin: auto;
 }
 /* Note section end here  */
 
@@ -63,15 +73,17 @@
     justify-content: space-between;
     margin: 1.2rem;
 }
-.spaces .create_space_btn a {
+.spaces .create_space_btn a{
     border: 1px solid black;
     padding: .2rem .5rem;
     background-color: black;
     color: white;
     text-decoration: none;
+    font-weight: 600;
 }
 .spaces .create_space_btn .fa-plus {
     margin-right: .3rem;
     color: white;
 }
+
 /* space secion end here  */

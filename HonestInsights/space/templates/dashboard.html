@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+
+<body>
+    <!-- Main white Frame start from here  -->
+    <section class="frame">
+        <div class="livePreview">
+            <h1>livePreview</h1>
+        </div>
+        <div class="CreateSpace">
+            <div class="heading">
+                <h1>Create a new Space</h1>
+                <span>After the Space is created, it will generate a dedicated page for collecting testimonials.</span>
+            </div>
+
+            <div class="createInsight">
+                <form action="#">
+                    <div class="space_name">
+                        <label for="spaceName">Space name<label>
+                                <input type="text" placeholder="Your's Space Name.." name="spaceName" id="spacnae">
+                                <span>Public URL is: testimonial.to/your-space</span>
+                    </div>
+                    <div class="spaceLogo">
+                        <label for="spaceLogo">Space logo</label>
+                        <div class="spaceLogoImage">
+                        </div>
+                        <div class="change_btn">
+                            <button id="changeButton">Change Image</button>
+                            <input type="file" id="imageInput" class="hidden-input" accept="image/*">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Main white frame end here  -->
+</body>
+
+</html>
