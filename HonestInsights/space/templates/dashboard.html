@@ -23,25 +23,55 @@
 
             <div class="createInsight">
                 <form action="#">
+                    <!-- Space Name div start from here  -->
                     <div class="space_name">
                         <label for="spaceName">Space name<label>
                                 <input type="text" placeholder="Your's Space Name.." name="spaceName" id="spacnae">
                                 <span>Public URL is: testimonial.to/your-space</span>
                     </div>
+                    <!-- Space name div end here  -->
+
+                    <!-- Space Logo div start from here  -->
                     <div class="spaceLogo">
                         <label for="spaceLogo">Space logo</label>
-                        <div class="spaceLogoImage">
-                        </div>
-                        <div class="change_btn">
-                            <button id="changeButton">Change Image</button>
-                            <input type="file" id="imageInput" class="hidden-input" accept="image/*">
+                        <div class="spaceLogo_btn">
+                            <div class="spaceLogoImage">
+                            </div>
+                            <div class="change_btn">
+                                <button id="changeButton">Change Image</button>
+                                <input type="file" id="imageInput" class="hidden-input" accept="image/*">
+                            </div>
                         </div>
                     </div>
+                    <!-- Space logo div end here  -->
+
+                    <!-- Space header title div start from here  -->
+                    <div class="space_titleHeader">
+                        <label for="titleHeader">Header Title</label>
+                        <input type="text" placeholder="Would you like to give a shoutout for xyz ?" name="titleHeader"
+                            required>
+                    </div>
+                    <!-- Space header title div end here  -->
+
+                    <!-- Space custom message div start from here -->
+                    <div class="space_customMessage">
+                        <label for="customeMessage">Custom Message</label>
+                        <input type="text" name="customeMessage" id="customeMessage"
+                            placeholder="Write a warm message to your customers, and give them simple directions on how to make the best Honest Insights..">
+                    </div>
+                    <!-- space custom message div end here -->
+
+                    <!-- Space Quesion div start from here -->
+                    <div class="space_questions">
+                        <label for="questionns">Question</label>
+                    </div>
+                    <!-- Space Question div end here -->
                 </form>
             </div>
         </div>
     </section>
     <!-- Main white frame end here  -->
+    <script src="{% static 'js/dashboard.js' %}"></script>
 </body>
 
 </html>

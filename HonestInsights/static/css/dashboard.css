@@ -10,6 +10,7 @@ body{
     background-color: grey;
 }
 
+/* Frame css start from here   */
 .frame {
     background-color: white;
     width: 90%;
@@ -22,6 +23,9 @@ body{
 .frame .CreateSpace {
     width: 60%;
 }
+
+
+ /* heading css start from here */
 .frame .CreateSpace .heading h1{
     font-size: 2rem;
     text-align: center;
@@ -32,10 +36,27 @@ body{
     display: block;
     text-align: center;
 }
+/* Heading css end here */
+
+/* Space Name css start from here */
+.frame .CreateSpace .space_name {
+    margin: 1rem 0rem;
+}
 .frame .CreateSpace .space_name span {
     font-size: .7rem;
 }
-.frame .CreateSpace .spaceLogo .spaceLogoImage {
+/* Space Name css end here */
+
+/* Spae logo css start from here */
+.frame .CreateSpace .spaceLogo {
+    margin: 1rem 0rem ;
+}
+.frame .CreateSpace .spaceLogo .spaceLogo_btn {
+    display: flex;
+    align-items: center;
+    gap: 0rem 1rem;    
+}
+.frame .CreateSpace .spaceLogo .spaceLogo_btn .spaceLogoImage {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
@@ -45,9 +66,38 @@ body{
     justify-content: center;
     background-color: #f0f0f0;
 }
+.frame .CreateSpace .spaceLogo .spaceLogo_btn .change_btn #imageInput {
+    display: none;
+}
 input {
     display: block;
-    width: 70%;
+    width: 87%;
     height: 2.2rem;
     padding: 0px 3px;
 }
+::placeholder {
+    white-space: pre-wrap;
+    vertical-align: top;
+}
+/* Space logo css end here */
+
+/* Space header title css start from here */
+.frame .CreateSpace .space_titleHeader {
+    margin: 1rem 0rem;
+}
+/* Space header title css end here */
+
+
+/* Space custom message css start from here */
+.frame .CreateSpace .space_customMessage {
+    margin: 1rem 0rem;
+}
+.frame .CreateSpace .space_customMessage #customeMessage {
+    height: 5.2rem;
+}
+/* Space custom message css end here */
+
+/* Space Question css start from here */
+
+/* Space Question css end here */
+/* Frame css end here    */
